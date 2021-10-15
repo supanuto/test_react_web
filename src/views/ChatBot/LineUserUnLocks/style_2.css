@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #fcfcfc;
+    background: #222;
+}
+.lt-image {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.lt-image::before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/329679/react-image-preload-effect.gif');
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.lt-image img {
+    width: 100%;
+    height: 100%;
+}
+.lt-image img.preload {
+    display: block;
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    left: -2%;
+    top: -2%;
+    z-index: 2;
+    opacity: 1;
+    filter: blur(10px);
+    transition: opacity 0.3s;
+}
+.lt-image._loaded::before {
+    opacity: 0;
+}
+.lt-image._loaded img.preload {
+    opacity: 0;
+}
+.image-test {
+    text-align: center;
+}
+.image-test input {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.custom-image {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 15px #000;
+}

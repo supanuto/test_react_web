@@ -1,0 +1,14 @@
+.main .container-fluid {
+    /* padding: 0 30px; */
+    padding: 0 10px;
+  }
+
+  /* Fix Table ให้กำหนดขนาดเอง */
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  th {
+    text-align:center;
+  }

@@ -1,0 +1,6 @@
+{
+  "name": "KTBMonitors",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./KTBMonitors.js"
+}

@@ -1,0 +1,4 @@
+/*//===> Override CSS ปิดปุ่ม Main Menu Left On Top */
+#root > div > header > button.d-lg-none.navbar-toggler {
+     display:none;
+}

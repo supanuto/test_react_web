@@ -1,0 +1,1 @@
+export const WebConfig = { API_URL: 'https://62525654.ngrok.io' };
